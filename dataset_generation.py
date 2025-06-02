@@ -10,6 +10,6 @@ for line in lines:
     data.append(parts)
 
 # Create DataFrame
-df = pd.DataFrame(data, columns=['English', 'German Singular', 'German Plural'])
+df = pd.DataFrame(data, columns=['English', 'German_Singular', 'German_Plural'])
 
-df.to_csv('german_words_dataset', index=False)
+df.to_csv('german_words_dataset.csv', index=True)
